@@ -48,6 +48,12 @@ group :development, :test do
   # Use shoulda-matchers to spec common rails functionality like validations and associations with less code
   gem 'shoulda-matchers'
 
+  # Use cucumber-rails to run automated acceptance test
+  gem 'cucumber-rails'
+
+  # Use database_cleaner to clean database state for testing
+  gem 'database_cleaner'
+
   # Use factory-girl to setup Ruby objects as test data
   gem 'factory_girl_rails'
 end
