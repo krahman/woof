@@ -24,7 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -41,5 +41,23 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  # Use rspec-rails to do unit testing
+  gem 'rspec-rails'
+
+  # Use shoulda-matchers to spec common rails functionality like validations and associations with less code
+  gem 'shoulda-matchers'
+
+  # Use cucumber-rails to run automated acceptance test
+  gem 'cucumber-rails', require: false
+
+  # Use database_cleaner to clean database state for testing
+  gem 'database_cleaner'
+
+  # Use factory-girl to setup Ruby objects as test data
+  gem 'factory_girl_rails'
+
+  # Use selenium-webdriver to run cucumber scenarios which use Javascript
+  gem 'selenium-webdriver'
 end
 
