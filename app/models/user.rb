@@ -5,4 +5,6 @@ class User < ActiveRecord::Base
   validates :last_name, presence: true
   
   has_many :businesses
+
+  has_secure_password
 end
