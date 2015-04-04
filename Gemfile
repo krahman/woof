@@ -49,12 +49,15 @@ group :development, :test do
   gem 'shoulda-matchers'
 
   # Use cucumber-rails to run automated acceptance test
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
 
   # Use database_cleaner to clean database state for testing
   gem 'database_cleaner'
 
   # Use factory-girl to setup Ruby objects as test data
   gem 'factory_girl_rails'
+
+  # Use selenium-webdriver to run cucumber scenarios which use Javascript
+  gem 'selenium-webdriver'
 end
 
