@@ -44,5 +44,11 @@ group :development, :test do
 
   # Use rspec-rails to do unit testing
   gem 'rspec-rails'
+
+  # Use shoulda-matchers to spec common rails functionality like validations and associations with less code
+  gem 'shoulda-matchers'
+
+  # Use factory-girl to setup Ruby objects as test data
+  gem 'factory_girl_rails'
 end
 
